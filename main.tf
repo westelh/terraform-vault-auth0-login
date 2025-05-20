@@ -2,7 +2,7 @@ resource "vault_jwt_auth_backend" "oidc" {
   description        = "OIDC Backend Connected to Auth0"
   path               = var.path
   type               = "oidc"
-  oidc_discovery_url = var.discobery_url
+  oidc_discovery_url = "https://${var.domain}/"
   oidc_client_id     = var.client_id
   oidc_client_secret = var.client_secret
   default_role       = "default"

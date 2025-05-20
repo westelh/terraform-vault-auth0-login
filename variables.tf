@@ -2,7 +2,7 @@ variable "path" {
   type = string
 }
 
-variable "discobery_url" {
+variable "domain" {
   type = string
 }
 
