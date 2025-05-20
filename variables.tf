@@ -11,13 +11,13 @@ variable "client_id" {
 }
 
 variable "client_secret" {
-  type = string
+  type      = string
   sensitive = true
 }
 
 variable "policies" {
-  type = list(string)
-  default = [ "default" ]
+  type    = list(string)
+  default = ["default"]
 }
 
 variable "vault_host" {

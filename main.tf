@@ -34,7 +34,7 @@ resource "vault_jwt_auth_backend_role" "default" {
   token_max_ttl                = 0
   token_num_uses               = 0
   token_period                 = 0
-  token_policies = var.policies
-  token_type = "default"
+  token_policies               = var.policies
+  token_type                   = "default"
 }
 
